@@ -1,0 +1,12 @@
+### ignore directories
+
+News/bs4/
+News/bs4-p2/
+News/bs4-p3/
+
+### ignore files
+
+News/economist-weekly.html
+News/news.html
+News/printedition
+
