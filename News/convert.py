@@ -135,6 +135,6 @@ for section in sectionsToOutput:
 
 if debugDbg: print(output.prettify())
 
-outputStream = open(outputFile, mode = 'w')
+outputStream = codecs.open(outputFile, 'w', 'utf-8')
 outputStream.write(output.prettify())
 outputStream.close()
