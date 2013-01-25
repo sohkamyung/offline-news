@@ -90,9 +90,10 @@ for key in articlesToOutput.keys():
         ### remove the class
         del article["class"]
         ### prepend "http://www.economist.com",
-        ### append "/print"
         url = article["href"]
-        article["href"] = "http://www.economist.com" + url + "/print"
+        ### append "/print"
+        ### article["href"] = "http://www.economist.com" + url + "/print"
+        article["href"] = "http://www.economist.com" + url
 
 if debugDbg: print(sectionsToOutput)
 if debugDbg: pp = pprint.PrettyPrinter(); pp.pprint(articlesToOutput)
