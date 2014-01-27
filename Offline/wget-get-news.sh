@@ -4,7 +4,8 @@ timeout=30
 maxLevel=1
 waitTime=2
 # for silly sites like Economist.com
-userAgent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12"
+# userAgent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12"
+userAgent="Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19"
 
 acceptList="lwn.css,layout.css.gzip,style.css.gzip"
 
@@ -14,6 +15,6 @@ rejectList="oasisi.php*,*adview.php*,pagenavi-css.css,js,ico,spacer.gif,Spacer.g
 
 rejectDirs="/news/images"
 
-acceptdomainList="localhost,lwn.net,66.240.198.75,news.bbc.co.uk,news.bbcimg.co.uk,newsimg.bbc.co.uk,images.bwbx.io,images.businessweek.com,res.businessweek.com,www.businessweek.com,news.businessweek.com,economist.com,technology.newscientist.com,environment.newscientist.com,space.newscientist.com,www.newscientist.com,www.newscientistspace.com,www.newscientisttech.com,www.technologyreview.com,www.universetoday.com,rackspacecloud.com,www.washingtonpost.com,live.washingtonpost.com,blogs.nature.com,www.nature.com,www.sciencenews.org,1-ps.googleusercontent.com,ut-images.s3.amazonaws.com,www.flickr.com,twitter.com,www.astroturf.com,legault.perso.sfr.fr,cloudfront.net"
+acceptdomainList="localhost,lwn.net,66.240.198.75,news.bbc.co.uk,news.bbcimg.co.uk,newsimg.bbc.co.uk,images.bwbx.io,images.businessweek.com,res.businessweek.com,www.businessweek.com,news.businessweek.com,mobile.businessweek.com,static.btrd.net,economist.com,technology.newscientist.com,environment.newscientist.com,space.newscientist.com,www.newscientist.com,www.newscientistspace.com,www.newscientisttech.com,www.technologyreview.com,www.universetoday.com,rackspacecloud.com,www.washingtonpost.com,live.washingtonpost.com,blogs.nature.com,www.nature.com,www.sciencenews.org,1-ps.googleusercontent.com,ut-images.s3.amazonaws.com,www.flickr.com,twitter.com,www.astroturf.com,legault.perso.sfr.fr,cloudfront.net"
 
 wget --no-http-keep-alive --no-check-certificate --restrict-file-names="windows,nocontrol" --timeout=${timeout} --user-agent="${userAgent}" --wait=${waitTime} --random-wait -e robots=off -H --html-extension --timestamping -r -l ${maxLevel} -p -k --domains=${acceptdomainList} --reject="${rejectList}" "http://localhost/news.html"

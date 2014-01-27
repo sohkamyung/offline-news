@@ -4,7 +4,8 @@ timeout=60
 maxLevel=1
 waitTime=2
 # for silly sites like Economist.com
-userAgent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12"
+# userAgent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12"
+userAgent="Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19"
 
 acceptList=
 
