@@ -12,7 +12,7 @@ acceptList=
 # rejectList="css,js,spacer.gif,black.gif,Spacer.gif,spn-printable-hd.gif"
 rejectList="js,spacer.gif,black.gif,Spacer.gif,spn-printable-hd.gif"
 
-excludeDirList="/cache,/blocks,/content"
+excludeDirList="/cache,/blocks,/content,/sites/all/modules/ec_ads"
 
 acceptDomainList="localhost,www.economist.com,media.economist.com,cdn.static-economist.com"
 
